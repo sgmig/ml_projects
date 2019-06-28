@@ -1,0 +1,30 @@
+# Built by Santiago Migliaccio, sgmigliaccio@gmail.com, 2019.
+
+This folder contains two Jupyter notebooks built for the Kaggle Facial Keypoints Recognition challenge. 
+
+The data can be downloaded from: https://www.kaggle.com/c/facial-keypoints-detection/overview.
+
+In order to run the code, the data files training.csv, test.csv and IdLookupTable.csv should be copied on this directory.
+
+This directory is organized as follows:
+
+     - facial_keypoints_intro.ipynb: A notebook for the initial exploration of the data. Contains visualizations of the images and keypoints.
+
+     - facial_keypoints_CNN.ipynb: Notebook for building and training a Convolutional Neural Network for the task of facial keypoint recognition, and drawing predictions from this network. 
+     Each model generated will be saved in a folder model_x, where x is a number. Within the model folder there is a logs/ folder, containing logs for Tensorboard. Tensorboard can be started  by running
+     
+     tensorboard --logdir=./model_x/logs
+     
+     on a terminal, and accesing the url displayed after running the command. 
+
+     - The folder model_1 contains the files and logs for loading an already trained version of the CNN. The tensorboard logs can be accessed as explained before. This folder contains a submission file, submission_model_1.csv, which scores a RMSE of 
+     
+     RMSE = 2.24962  
+     
+     on the Kaggle website, corresponding to place 50th in the private leaderboard. 
+     
+     The graph of the network can be accesesd via the tensorboard logs, as well as a summary of the hyperparameters used. For practicality, the same summary is included here: 
+     
+     
+
+
